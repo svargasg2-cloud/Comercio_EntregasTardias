@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto aborda un problema logístico operativo en el comercio electrónico brasileño utilizando el conjunto de datos público de **Olist**. El objetivo principal es construir modelos predictivos supervisados para **anticipar qué pedidos corren el riesgo de entregarse después de la fecha comprometida**, evaluando la decisión en términos de métricas estadísticas y costos de impacto empresarial.
 
@@ -18,7 +18,7 @@ El sistema utiliza exclusivamente **28 variables predictoras** que se encuentran
 
 ---
 
-## 🗂️ Estructura del Repositorio
+## Estructura del Repositorio
 
 El repositorio sigue la arquitectura estándar de ingeniería analítica para garantizar la reproducibilidad y la modularidad a lo largo del curso:
 
