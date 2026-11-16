@@ -1,0 +1,93 @@
+{
+  "laboratorio": "S14",
+  "id_estudiante": "28",
+  "semilla": 1028,
+  "timestamp_utc": "2026-11-16T17:20:14.651445+00:00",
+  "python": "3.13.18",
+  "pandas": "2.2.3",
+  "numpy": "2.4.6",
+  "sklearn": "1.6.1",
+  "n_muestra": 35000,
+  "n_train": 24500,
+  "n_valid": 5250,
+  "n_test": 5250,
+  "huella_muestra": "5ba650737e6f",
+  "pca": {
+    "variables_numericas_iniciales": 24,
+    "componentes_retenidas_90": 15,
+    "varianza_explicada_acumulada": 0.9053680603293196
+  },
+  "experimentos": [
+    {
+      "Experimento": "A. Referencia (Sin PCA, C=1.0)",
+      "PCA": "No",
+      "C": 1.0,
+      "Accuracy": 0.6644,
+      "Precision": 0.1212,
+      "Recall": 0.6338,
+      "F1": 0.2034,
+      "AP": 0.1387,
+      "FP": 1632,
+      "FN": 130,
+      "Costo_BRL": 17606
+    },
+    {
+      "Experimento": "B. PCA 90% (C=1.0)",
+      "PCA": "Sí (90%)",
+      "C": 1.0,
+      "Accuracy": 0.6541,
+      "Precision": 0.1112,
+      "Recall": 0.5887,
+      "F1": 0.1871,
+      "AP": 0.1252,
+      "FP": 1670,
+      "FN": 146,
+      "Costo_BRL": 18470
+    },
+    {
+      "Experimento": "C. PCA 90% + Mayor reg (C=0.1)",
+      "PCA": "Sí (90%)",
+      "C": 0.1,
+      "Accuracy": 0.655,
+      "Precision": 0.1132,
+      "Recall": 0.6,
+      "F1": 0.1904,
+      "AP": 0.1234,
+      "FP": 1669,
+      "FN": 142,
+      "Costo_BRL": 18322
+    },
+    {
+      "Experimento": "D. PCA 90% + Menor reg (C=10.0)",
+      "PCA": "Sí (90%)",
+      "C": 10.0,
+      "Accuracy": 0.6535,
+      "Precision": 0.1123,
+      "Recall": 0.5972,
+      "F1": 0.189,
+      "AP": 0.1246,
+      "FP": 1676,
+      "FN": 143,
+      "Costo_BRL": 18413
+    }
+  ],
+  "mejor_por_costo": {
+    "Experimento": "A. Referencia (Sin PCA, C=1.0)",
+    "PCA": "No",
+    "C": 1.0,
+    "Accuracy": 0.6644,
+    "Precision": 0.1212,
+    "Recall": 0.6338,
+    "F1": 0.2034,
+    "AP": 0.1387,
+    "FP": 1632,
+    "FN": 130,
+    "Costo_BRL": 17606
+  },
+  "prueba_ks_valor_flete": {
+    "estadistico_D": 0.018217687074829958,
+    "valor_p": 0.11198703041005964,
+    "alpha": 0.05,
+    "decision": "No rechazar H0"
+  }
+}
